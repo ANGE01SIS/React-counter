@@ -2,8 +2,56 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
   background-color: #141516;
+  min-height: 100vh;
+}
+
+.contTotalCounter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+.countNumber {
+  color: #ced4e2;
+  font-family: Inter, sans-serif;
+  font-size: 15em;
+  font-weight: 500;
+}
+
+.button {
+  background-color: transparent;
+  border: gray 1px solid;
+  color: rgb(255, 255, 255);
+  aspect-ratio: 1/1;
+  height: 5em;
+  border-radius: 50%;
+  margin: 3em;
+  cursor: pointer;
+  transition: border 0.2s ease-in-out;
+}
+
+.button:hover {
+  border-color: white;
+}
+
+.size-6 {
+  height: 3em;
+  vertical-align: middle;
+}
+
+.input-change-value {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%);
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  padding: 10px;
+  background-color: #ced4e2;
 }
